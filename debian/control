@@ -1,0 +1,14 @@
+Source: solocastcontrol
+Section: utils
+Priority: optional
+Maintainer: Precise
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
+Homepage: https://github.com/Mr-Precise/SoloCastControl/
+
+Package: solocastcontrol
+Architecture: all
+Depends: ${misc:Depends}, alsa-utils, bash
+Description: HyperX SoloCast control script
+ A simple Bash script to manage HyperX SoloCast settings (on/off, volume).
+ It supports commands like on, off, toggle, set, up, down, get.
