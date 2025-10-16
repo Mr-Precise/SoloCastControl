@@ -66,6 +66,21 @@ For Debian-based systems, you can build and install a `.deb` package.
    sudo dpkg -i ../solocastcontrol_1.0-1_all.deb
    ```
 
+### Option 4: Arch Linux PKGBUILD Package
+
+For Arch Linux users, a PKGBUILD file is included in the repository to build and install the script as a package (named `solocastcontrol-git`) using `makepkg`. This fetches the latest version from Git and installs it system-wide.
+
+1. Install build dependencies if needed:
+   ```
+   sudo pacman -S --needed git base-devel
+   ```
+2. Build and install the package:
+   ```
+   makepkg -si
+   ```
+   - `-s`: Installs any missing dependencies automatically.
+   - `-i`: Installs the built package.
+
 ## Usage
 
 Run the script with one of the following commands:
